@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Clínica de Nutrición</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+
+	<body class="fondo">
+		
+		<header>
+			<div class="container">
+				<h1 class="titulo">Clínica de Nutrición</h1>
+			</div>
+		</header>	
+		
+		<main>
+			<section class="container">
+				<h2>Pacientes</h2>
+				<label for="filtrar-tabla"></label>
+				<input type="text" name="filtro" 
+				id="filtrar-tabla" placeholder="Buscar por nombre del paciente">
+				<table class="fondo-opac-titulo">
+					<thead>
+						<tr>
+							<th>Nombre Completo</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Grasa Corporal(%)</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabla-pacientes" class="fondo-opac-cuerpo">
+						<tr class="paciente">
+							<td class="info-nombre">Clark Kent</td>
+							<td class="info-peso">102</td>
+							<td class="info-altura">1.92</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Bruce Wayne</td>
+							<td class="info-peso">95</td>
+							<td class="info-altura">1.88</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Diana Prince</td>
+							<td class="info-peso">75</td>
+							<td class="info-altura">1.83</td>
+							<td class="info-gordura">5</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente">
+							<td class="info-nombre">Barry Allen</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.81</td>
+							<td class="info-gordura">5</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Arthur Curry</td>
+							<td class="info-peso">147</td>
+							<td class="info-altura">1.83</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Víctor Stone</td>
+							<td class="info-peso">175</td>
+							<td class="info-altura">1.97</td>
+							<td class="info-gordura">2</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">Calvin Swanwick</td>
+							<td class="info-peso">126</td>
+							<td class="info-altura">1.85</td>
+							<td class="info-gordura">10</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<span id="error-ajax" class="invisible">Error al buscar los pacientes</span>
+
+				<button id="buscar-paciente" class="boton bto-principal">
+					Buscar Pacientes
+				</button>
+
+			</section>
+		</main>
+
+		<section class="container">
+			<h2 id="titulo-form">Adicionar Nuevo Paciente</h2>
+			<ul id="mensajes-errores"></ul>
+
+
+			<form id="form-adicionar">
+				<div class="grupo">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" name="nombre" type="text" placeholder="Ingresar el nombre completo del paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="Ingresar el peso del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="text" placeholder="Ingresar la altura del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="gordura">Porcentaje de Grasa Corporal:</label>
+					<input id="gordura" type="text" placeholder="Ingresar el % de grasa corporal del paciente" class="campo campo-medio">
+				</div>
+				<button id="adicionar-paciente" class="boton bto-principal">Adicionar Paciente</button>
+			</form>
+		</section>
+		
+		<script src="js/calcular-imc.js"></script>	
+		<script src="js/form.js"></script>	
+		<script src="js/eliminar-paciente.js"></script>
+		<script src="js/filtrar.js"></script>
+		<script src="js/buscar-pacientes.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #6cb885;
+	height: 10em;
+	color: rgb(255, 255, 255);
+	margin-bottom: 3.5em;
+}
+
+header h1{
+	font-family: 'Homemade Apple', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+	margin-left: 29.3%;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+h1:hover {
+	background-image: linear-gradient(rgb(255, 255, 255,) rgb(255, 255, 255));
+    background-size: 100% 2.5px;
+}
+
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.fondo {
+	background-image: url(../img/header/header5.jpg);
+	opacity: 0.9;
+}
+
+.container{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-family: 'Urbanist', sans-serif;
+	font-size: 2.2em;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-shadow: 2px 2px 0 rgb(247, 242, 242);
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid rgb(179, 178, 178);
+	text-align: center;
+}
+
+th{
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-weight: bold;
+}
+
+.fondo-opac-titulo {
+	background-color: #bbf1b0;
+}
+.fondo-opac-cuerpo {
+	background-color: #ffffff;
+	font-family: 'Manjari', sans-serif;
+}
+
+label{
+	font-family: 'Be Vietnam Pro', sans-serif;
+	color: rgb(0, 0, 0);
+	display: block;
+	margin-bottom: .5em;
+}
+
+input {
+	font-family: 'Manjari', sans-serif;
+	font-size: 1em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid rgb(161, 159, 159);
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#319fda;
+	border-color: #046299;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px 70px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+	text-shadow: 1px 1px 0 rgb(92, 92, 92);
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.paciente-incorrecto{
+	background-color: lightcoral;
+}
+
+#mensajes-errores{
+	color:rgb(255, 0, 0);
+	font-family: 'Anton', sans-serif;
+	margin-top: 1em;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition:0.5s;
+}
+
+#filtrar-tabla{
+	width: 215px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.invisible{
+	display:none;
+}
